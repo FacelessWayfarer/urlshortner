@@ -52,7 +52,7 @@ func main() {
 
 	router.Get("/{alias}", urlget.New(log, db))
 
-	log.Info("starting server", slog.String("address:", cfg.Address))
+	log.Info("starting server", slog.String("Port:", cfg.Address))
 
 	server := &http.Server{
 		Addr:         cfg.Address,

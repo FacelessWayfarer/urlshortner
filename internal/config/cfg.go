@@ -18,7 +18,7 @@ type Cfg struct {
 }
 
 type HTTPServ struct {
-	Address     string        `yaml:"address"  env-deafault:"localhost:6060"`
+	Address     string        `yaml:"address"  env-deafault:":80"`
 	Timeout     time.Duration `yaml:"timeout"  env-deafault:"4s"`
 	IdleTimeout time.Duration `yaml:"idle_timeout"  env-deafault:"60s"`
 	User        string        `yaml:"user" env-required:"true"`

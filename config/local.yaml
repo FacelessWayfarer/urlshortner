@@ -1,7 +1,7 @@
 env: "local"
 database_path: "./database/database.db"
 http_server:
-  address: "localhost:6060"
+  address: ":80"
   timeout: 4s
   idle_timeout: 60s
   user: "CoolAdmin69"
